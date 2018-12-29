@@ -1,0 +1,31 @@
+
+**** Build of configuration Debug for project Maestro_dac ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building target: Maestro_dac.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430G2452__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"Maestro_dac.map" --heap_size=80 --stack_size=80 -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Maestro_dac_linkInfo.xml" --rom_model -o "Maestro_dac.out"  "./main.obj" "../lnk_msp430g2452.cmd" -l"libc.a" 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changes using LPMx or _bis_SR_register() or __low_power_mode_x() in this project.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ IFG2      ./main.obj      
+ UCA0BR0   ./main.obj      
+ UCA0BR1   ./main.obj      
+ UCA0CTL0  ./main.obj      
+ UCA0CTL1  ./main.obj      
+ UCA0MCTL  ./main.obj      
+ UCA0TXBUF ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Maestro_dac.out" not built
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+
+>> Compilation failure
+gmake: *** [Maestro_dac.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****

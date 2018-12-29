@@ -1,0 +1,35 @@
+#include    <msp430.h>
+volatile int x;
+volatile    char    received_ch =   0;
+int main(void)
+{ P1DIR=BIT6;
+	WDTCTL =   WDTPW   +   WDTHOLD;    //  Stop    WDT
+	P1SEL  =   BIT1    |   BIT2    |   BIT4;
+	P1SEL2 =   BIT1    |   BIT2    |   BIT4;
+
+		P1IE= BIT5;  // se habilita la interrupcion
+		P1IES= ~BIT5;  // bandera en la transicion
+	    P1IFG= ~BIT5;  // bandera en 0...
+
+	UCA0CTL1   =   UCSWRST;
+	UCA0CTL0   |=  UCCKPH  +   UCMSB   +   UCMST   +   UCSYNC; //  3-pin,  8-bit   SPI master
+	UCA0CTL1   |=  UCSSEL_2;   //  SMCLK
+	UCA0BR0    |=  0x02;   //  /2
+	UCA0BR1    =   0;  //
+	UCA0MCTL   =   0;  //  No  modulation
+	UCA0CTL1   &=  ~UCSWRST;   //  **Initialize    USCI    state   machine**ç
+
+while(1){
+	while  (!(IFG2 &   UCA0TXIFG));    //  USCI_A0 TX  buffer  ready?
+		UCA0TXBUF  =   x;  }
+}
+
+#pragma vector= PORT1_VECTOR
+__interrupt void Led_ISR (void){
+	P1IFG^= BIT5; // se cambia la bandera...
+	x++;
+	if(x>7){x=0; }
+	P1OUT^=BIT6;
+
+}
+

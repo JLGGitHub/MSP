@@ -1,0 +1,29 @@
+
+**** Build of configuration Debug for project spi_maestro-2452 ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmsp --abi=eabi --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430G2452__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 12: error #20: identifier "UCA0CTL1" is undefined
+"../main.c", line 12: error #20: identifier "UCSWRST" is undefined
+"../main.c", line 13: error #20: identifier "UCA0CTL0" is undefined
+"../main.c", line 13: error #20: identifier "UCCKPH" is undefined
+"../main.c", line 13: error #20: identifier "UCMSB" is undefined
+"../main.c", line 13: error #20: identifier "UCMST" is undefined
+"../main.c", line 13: error #20: identifier "UCSYNC" is undefined
+"../main.c", line 14: error #20: identifier "UCSSEL_2" is undefined
+"../main.c", line 15: error #20: identifier "UCA0BR0" is undefined
+"../main.c", line 16: error #20: identifier "UCA0BR1" is undefined
+"../main.c", line 17: error #20: identifier "UCA0MCTL" is undefined
+"../main.c", line 21: error #20: identifier "IFG2" is undefined
+"../main.c", line 21: error #20: identifier "UCA0TXIFG" is undefined
+"../main.c", line 22: error #20: identifier "UCA0TXBUF" is undefined
+"../main.c", line 21: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+14 errors detected in the compilation of "../main.c".
+
+>> Compilation failure
+gmake: *** [main.obj] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****

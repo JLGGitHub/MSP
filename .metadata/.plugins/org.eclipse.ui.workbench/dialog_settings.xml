@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="1440" key="dialogWidth"/>
+		<item value="759" key="dialogHeight"/>
+		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.ui.commands"/>
+			<item value="org.eclipse.e4.ui.parts"/>
+		</list>
+		<list key="textArray">
+			<item value="termina"/>
+			<item value="term"/>
+			<item value="termi"/>
+			<item value="var"/>
+			<item value="conso"/>
+		</list>
+		<list key="orderedElements">
+			<item value="org.eclipse.tm.terminal.view.TerminalView"/>
+			<item value="com.ti.ccstudio.leru.addglobalvariable"/>
+			<item value="org.eclipse.ui.console.ConsoleView"/>
+		</list>
+		<list key="textEntries">
+			<item value="3"/>
+			<item value="1"/>
+			<item value="1"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ImportExportAction">
+	</section>
+</section>

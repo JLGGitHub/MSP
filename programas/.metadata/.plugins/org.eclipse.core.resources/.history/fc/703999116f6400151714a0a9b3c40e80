@@ -1,0 +1,34 @@
+#include    <msp430.h>
+
+volatile    char   dato;
+int main(void)
+{
+	P1DIR= BIT6;
+	WDTCTL =   WDTPW   +   WDTHOLD;    //  Stop    WDT
+	P1SEL  =   BIT1    |   BIT2    |   BIT4;
+	P1SEL2 =   BIT1    |   BIT2    |   BIT4;
+
+	UCA0CTL1   =   UCSWRST;
+	UCA0CTL0   |=  UCCKPH  +   UCMSB     +   UCSYNC; //  3-pin,  8-bit   SPI master
+    //	UCA0CTL1   |=  UCSSEL_2;   //  SMCLK
+	//UCA0BR0    |=  0x02;   //  /2
+    //	UCA0BR1    =   0;  //
+	//UCA0MCTL   =   0;  //  No  modulation
+	UCA0CTL1   &=  ~UCSWRST;   //  **Initialize    USCI    state   machine**
+	IE2 |= UCA0RXIE;                          // Enable USCI0 RX interrupt
+    __bis_SR_register(LPM4_bits + GIE);       // Enter LPM4, enable interrupts
+
+	while(1){
+}
+}
+#pragma vector=USCIAB0RX_VECTOR
+__interrupt void USCI0RX_ISR (void)
+{
+  dato= UCA0RXBUF;
+  if (dato==9){
+	  P1OUT= BIT6;
+  } else{
+	  P1OUT=0;
+  }
+  IFG2&=~UCA0RXIFG;
+}

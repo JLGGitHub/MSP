@@ -1,0 +1,22 @@
+#include <msp430.h>
+
+int main(void)
+{
+  volatile unsigned int i;
+
+  WDTCTL = WDTPW+WDTHOLD;                   // Stop WDT
+  P1DIR |= BIT1;                            // P1.1 output
+
+  P1DIR |= BIT0;                            // ACLK set out to pins
+  P1SEL |= BIT0;
+  P2DIR |= BIT2;                            // SMCLK set out to pins
+  P2SEL |= BIT2;
+  P7DIR |= BIT7;                            // MCLK set out to pins
+  P7SEL |= BIT7;
+
+  while(1)
+  {
+    P1OUT ^= BIT1;
+    __delay_cycles(60000);                  // Delay
+  }
+}

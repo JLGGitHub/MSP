@@ -1,0 +1,429 @@
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 92: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 99: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 109: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 120 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: Filtros_Processing.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"Filtros_Processing.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Filtros_Processing_linkInfo.xml" --rom_model -o "Filtros_Processing.out"  "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Filtros_Processing.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 102: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 109: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 119: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 130 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 142 (col. 33): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: Filtros_Processing.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"Filtros_Processing.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Filtros_Processing_linkInfo.xml" --rom_model -o "Filtros_Processing.out"  "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Filtros_Processing.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 102: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 109: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 119: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 130 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 142 (col. 33): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: Filtros_Processing.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"Filtros_Processing.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Filtros_Processing_linkInfo.xml" --rom_model -o "Filtros_Processing.out"  "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Filtros_Processing.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 102: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 109: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 119: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 130 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 142 (col. 33): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: Filtros_Processing.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"Filtros_Processing.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Filtros_Processing_linkInfo.xml" --rom_model -o "Filtros_Processing.out"  "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Filtros_Processing.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 102: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 109: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 119: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 130 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 142 (col. 33): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: Filtros_Processing.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"Filtros_Processing.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Filtros_Processing_linkInfo.xml" --rom_model -o "Filtros_Processing.out"  "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Filtros_Processing.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 102: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 109: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 119: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 130 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 142 (col. 33): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: Filtros_Processing.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"Filtros_Processing.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Filtros_Processing_linkInfo.xml" --rom_model -o "Filtros_Processing.out"  "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Filtros_Processing.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 102: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 109: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 119: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 130 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 142 (col. 33): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: Filtros_Processing.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"Filtros_Processing.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Filtros_Processing_linkInfo.xml" --rom_model -o "Filtros_Processing.out"  "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Filtros_Processing.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 102: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 109: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 119: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 130 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 142 (col. 33): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: Filtros_Processing.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"Filtros_Processing.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Filtros_Processing_linkInfo.xml" --rom_model -o "Filtros_Processing.out"  "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Filtros_Processing.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 102: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 109: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 119: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 130 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 142 (col. 33): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: Filtros_Processing.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"Filtros_Processing.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Filtros_Processing_linkInfo.xml" --rom_model -o "Filtros_Processing.out"  "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Filtros_Processing.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 102: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 109: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 119: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 130 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 142 (col. 33): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: Filtros_Processing.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"Filtros_Processing.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Filtros_Processing_linkInfo.xml" --rom_model -o "Filtros_Processing.out"  "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Filtros_Processing.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 102: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 109: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 119: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 130 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 142 (col. 33): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: Filtros_Processing.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"Filtros_Processing.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Filtros_Processing_linkInfo.xml" --rom_model -o "Filtros_Processing.out"  "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Filtros_Processing.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Filtros_Processing ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 102: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 109: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 119: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 130 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 142 (col. 33): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: Filtros_Processing.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"Filtros_Processing.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Filtros_Processing_linkInfo.xml" --rom_model -o "Filtros_Processing.out"  "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: Filtros_Processing.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project CodigoSophia1 ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 62: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 64: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 65: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 66: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 67: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 68: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 69: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 173: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 190: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 207: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 214: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 271: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 272: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 363: remark #1528-D: (ULP 3.1) Detected flag polling using UCBUSY. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 325: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 340: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 340: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 342: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 344: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 371: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 373: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 375: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 377: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 379: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 381: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 383: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 385: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 388: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 390: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 390: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 391: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 391: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 392: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 392: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 393: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 393: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 394: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 394: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 396: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 396: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 396: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 396: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 396: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 398: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 399: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 399: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 400: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 400: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 402: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 404: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 404: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 405: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 405: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 406: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 406: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 407: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 407: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 408: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 408: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 410: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 410: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 410: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 410: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 410: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 412: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 413: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 413: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 414: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 414: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 416: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 417: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 417: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 419: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 420: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 420: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 421: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 423: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 447: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 448: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 271 (col. 26): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 398 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 412 (col. 29): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: CodigoSophia1.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"CodigoSophia1.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="CodigoSophia1_linkInfo.xml" --rom_model -o "CodigoSophia1.out"  "./CrcLib.obj" "./main.obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: CodigoSophia1.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project CodigoSophia1 ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****

@@ -1,0 +1,168 @@
+#include <msp430.h> 
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include "CrcLib.h"
+#include "QmathLib.h"
+//====================================
+
+//
+unsigned char Auxiliar_Leer_Puerto;
+short Auxiliar_ADC;
+unsigned short  Informacion_Control, Informacion_P_ADC, Informacion_P_Digital;
+// Variables de formato tipo Q, necesarias para la implementacion de los filtros Digitales.
+_q4 qA;
+// Coeficientes de los filtros Digitales ( PASABAJAS 10 Hz )
+#define b0 1
+#define b1 -1.1430
+#define b2 0.4128
+#define a0 0.0675
+#define a1 0.1349
+#define a2 0.0675
+
+struct ValoresFiltro   //esctructura creada para el calculo de los filtros
+{
+		signed	short x0;
+		signed	short y0;
+		signed	short x1;
+		signed	short y1;
+		signed	short x2;
+		signed	short y2;
+
+};
+struct ValoresFiltro Vfiltro[10];
+
+
+
+
+void Iniciar_Uart(void){
+	P3SEL |= BIT3+BIT4; 								// P3.3 P3.4 = TXD/RXD
+	UCA0CTL1 |= UCSWRST; 								// Reset the state machine-USCI logic held in reset state.
+	UCA0CTL1 |= UCSSEL_2; 								// SMCLK como fuente de reloj
+	UCA0BR0 = 175; 										// 20MHz/115200 = 175, 230400= 87
+	UCA0BR1 = 0;
+	UCA0MCTL |=  UCBRS_5; 								// Modulation UCBRSx=7----5, UCBRFx=0
+	UCA0CTL1 &= ~UCSWRST; 								// Initialize the state machine
+	UCA0IE |= UCRXIE; 									// Enable USCI_A RX interrupt
+//============ Configuracion UART =================
+}
+
+void Iniciar_puertos(void){
+	P5DIR= BIT2;
+	P5OUT=0x00;
+//============ Configuracion Puertos ==============
+}
+//============ Configuracion ADC ==================
+
+void Iniciar_ADC(void){
+	P6SEL = 0x01;                             			// Enable A/D channel inputs
+	ADC12CTL0 = ADC12ON+ADC12MSC+ADC12SHT0_0; 			// Turn on ADC12, extend sampling time      // to avoid overflow of results
+	ADC12CTL1 = ADC12SHP+ADC12CONSEQ_2;       			// Use sampling timer, repeated sequenc
+	ADC12MCTL0 = ADC12INCH_0;                 			// ref+=AVcc, channel = A
+	ADC12CTL0 |= ADC12ENC;                    			// Enable conversions
+	ADC12CTL0 |= ADC12SC;                     			// Start convn - software trigger
+//============ Configuracion ADC ==================
+}
+
+//============ Configuracion Timer ================
+
+void Iniciar_Timer(void){
+	TA0CCTL0 = CCIE;                          			// CCR0 interrupt enabled
+	//TA0CCR0 = 25191;									// se carga para 10 Ms en caso de que el reloj este en 20Mhz
+	TA0CCR0 = 26250;
+	TA0CTL = TASSEL_2 + MC_1 +ID_3;         				// SMCLK, Modo UP, Divi 8.
+//============ Configuracion Timer ================
+}
+
+//============ Configuracion Reloj ==================
+void MyReloj_20Mhz(void){
+		UCSCTL3 = SELREF_2; 							// Set DCO FLL reference = REFO
+		UCSCTL4 |= SELA_2; 								// Set ACLK = REFO
+		UCSCTL0 = 0x0000; 								// Set lowest possible DCOx, MOD
+			do
+			{
+			UCSCTL7 &= ~(XT2OFFG + XT1LFOFFG + DCOFFG);
+			SFRIFG1 &= ~OFIFG;
+			}while (SFRIFG1&OFIFG);
+
+		__bis_SR_register(SCG0);
+		UCSCTL1 = DCORSEL_6;
+		UCSCTL2 |= 615;                   				// Set DCO Multiplier for 20MHz
+		__bic_SR_register(SCG0);
+		__delay_cycles(700000);							// Tiempo para establcer el reloj.
+}
+
+//============ Configuracion Reloj ==================
+//============ Enviar Informacion  ==================
+
+void Enviar_serial_text(char c){						// Se realiza el envio de la palabra.
+		while (!(UCA0IFG & UCTXIFG));
+		UCA0TXBUF =c;
+	    	  }
+
+
+
+	void Metodo_cambios(){
+		for (m = 1; m < 9; m++) {
+			Informacion_Control= inf[m] & 0x380;
+			Informacion_Control= Informacion_Control>>3;
+			Informacion_P_ADC= 	inf[m]&0x7f;
+			Informacion_Control=Informacion_Control ^ Leer_ADC;
+				Enviar_serial_text(0x00+m);
+				Enviar_serial_text(Informacion_Control);
+				Enviar_serial_text(Informacion_P_ADC);
+	}
+
+	
+}
+void Actualizar_Datos(){
+
+	ADC12CTL0 |= ADC12SC;
+	while (!(ADC12IFG & BIT0));
+	inf[1]= ADC12MEM0>>2;
+
+		Vfiltro[1].x2 = Vfiltro[1].x1;
+		Vfiltro[1].x1 = Vfiltro[1].x0;
+		Vfiltro[1].y2 = Vfiltro[1].y1;
+		Vfiltro[1].y1 = Vfiltro[1].y0;
+		Vfiltro[1].x0=  inf[m];
+				//Y_0=((X_0*b0)+(X_1*b1)+(X_2*b2)-(Y_1*a1)-(Y_2*a2))/a0; Ecuacion del filtro...
+				qA= _Q4mpyI16(_Q4(a0),Vfiltro[1].x0) + _Q4mpyI16(_Q4(a1),Vfiltro[1].x1) + _Q4mpyI16(_Q4(a2),Vfiltro[1].x2) - _Q4mpyI16(_Q4(b1),Vfiltro[1].y1) - _Q4mpyI16(_Q4(b2),Vfiltro[1].y2);
+				qA=  _Q4div(qA,_Q4(b0));
+				Vfiltro[1].y0=  _Q4toF(qA);
+				Vfiltro[1].y0=  Vfiltro[1].y0&0x3FE;
+				inf[1]= Vfiltro[1].y0;
+	}
+
+
+void main(void) {
+     WDTCTL = WDTPW | WDTHOLD;
+    MyReloj_20Mhz();
+    Iniciar_ADC();
+    Iniciar_Uart();
+    Iniciar_Timer();
+
+    __bis_SR_register(GIE);
+    while(1){
+    	 if(Bandera_int_Timer==true){
+    		Actualizar_Datos();
+    		Bandera_int_Timer= false;
+    		Metodo_cambios();
+    	}
+
+    }
+}
+// ======================== Zona de interrupcion ==============================
+#pragma vector=USCI_A0_VECTOR
+__interrupt void USCI_A0_ISR(void){
+	Contador_interrupcion+=1;
+	Captura_rx=UCA0RXBUF;
+	Bandera_int_Rx= true;
+}
+#pragma vector=TIMER0_A0_VECTOR
+__interrupt void TIMER0_A0_ISR(void){
+	Bandera_int_Timer= true;
+	P5OUT= 0x04;
+}
+//=============================================================================
+//=============================================================================

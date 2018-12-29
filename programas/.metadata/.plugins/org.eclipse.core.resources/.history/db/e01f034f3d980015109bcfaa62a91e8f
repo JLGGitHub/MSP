@@ -1,0 +1,56 @@
+#include  <msp430g2553.h>
+volatile char g;
+void adc(){
+	ADC10CTL0= SREF_0 + ADC10SHT_2 + ADC10ON;
+	ADC10CTL1= INCH_5 + SHS_0 + ADC10DIV_0 + ADC10SSEL_0 + CONSEQ_0;
+	ADC10AE0= BIT5;
+	ADC10CTL0 |= ENC;
+}
+
+ void serial(){
+ 	P1SEL= BIT1 + BIT2;
+ 	P1SEL2= BIT1+  BIT2;// se configura los p1.1 y P1.2 para servir como comunicacion serial...
+ 	UCA0CTL1 |= UCSSEL_2  +UCSWRST;// SMCLK
+ 	UCA0BR1 = 0;
+ 	UCA0BR0= 104; // VALOR QUE SE CARGA CON UNA FRECUENCIA 16 MHZ Y UNA MODULACION UCBRS0=1...
+     UCA0MCTL= UCBRS_1;  // MODULACION...
+ 	UCA0CTL1 &= ~UCSWRST;
+ 	IE2 = UCA0RXIE;
+ }
+
+ void configuracion(){
+ 	//Configurando el reloj, a 1 MHZ
+ 	BCSCTL1= CALBC1_1MHZ;
+ 	DCOCTL= CALDCO_1MHZ;
+ 	//TA0CTL= TASSEL_2 + MC_1; // smclk-- modo up
+ 	//TA0CCTL0= CCIE; // habilito la interrupcion
+ 	//TA1CCR0= 30000; // 100 hz, 10 mS
+ 	P1DIR= 0x41; // pin 3 como entrada
+ 	P2DIR= 0x00;
+ 	P1IE= BIT3;  // se habilita la interrupcion
+ 	P1IES= ~BIT3;  // bandera en la transicion
+    P1IFG= ~BIT3;  // bandera en 0..
+        _BIS_SR(GIE);
+ }
+ void main(){
+
+	WDTCTL = WDTPW | WDTHOLD;
+ 	configuracion();
+ 	serial();
+ 	while(1){
+ 		}
+ }
+ #pragma vector= PORT1_VECTOR
+ __interrupt void Led_ISR (void){
+	 	while (!(IFG2&UCA0TXIFG));
+	 	UCA0TXBUF='g';
+		P1IFG&= ~BIT3; // se cambia la bandera...
+ }
+
+#pragma vector=TIMER0_A0_VECTOR    // Timer1 A0 interrupt service routine
+__interrupt void Timer0_A0 (void) {
+	P1OUT |= BIT0;		// triac activo
+	TA0CCTL0 &= ~CCIFG;
+	}
+
+

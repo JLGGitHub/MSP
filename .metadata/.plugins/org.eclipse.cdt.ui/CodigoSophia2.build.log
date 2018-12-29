@@ -1,0 +1,109 @@
+
+**** Build of configuration Debug for project CodigoSophia2 ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 62: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 64: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 65: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 66: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 67: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 68: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 69: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 171: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 188: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 205: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 212: remark #1528-D: (ULP 3.1) Detected flag polling using UCTXIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 269: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 270: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 360: remark #1528-D: (ULP 3.1) Detected flag polling using UCBUSY. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 322: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 337: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 339: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 341: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 368: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 371: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 374: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 377: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 380: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 383: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 386: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 389: remark #1528-D: (ULP 3.1) Detected flag polling using ADC12IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 393: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 396: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 396: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 397: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 397: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 398: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 398: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 399: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 399: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 400: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 400: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 403: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 403: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 403: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 403: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 403: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 405: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 406: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 406: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 408: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 408: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 447: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 448: remark #2553-D: (ULP 14.1) Array index (involving "m") of type "int". Recommend using "unsigned int"
+"../main.c", line 9: remark #1535-D: (ULP 8.1) variable "cAumentoADC" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 269 (col. 26): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 405 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: CodigoSophia2.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/bin/cl430" -vmspx --abi=eabi --data_model=restricted --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"CodigoSophia2.map" --heap_size=160 --stack_size=160 --use_hw_mpy=F5 --cinit_hold_wdt=on -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.3/include" -i"c:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="CodigoSophia2_linkInfo.xml" --rom_model -o "CodigoSophia2.out"  "./CrcLib.obj" "./main.obj" "./main[Conflicto].obj" "../QmathLib_CCS_MPY32_5xx_6xx_CPUX_large_code_restricted_data.lib" "../lnk_msp430f5529.cmd" -l"libc.a" -l"libmath.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+error #10056: symbol "Recepcion_Bifrost" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Metodo_Leer_Puerto" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Metodo_Habilitar" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "__TI_int56" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "__TI_int53" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Iniciar_Timer" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "m" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "SimpreHabilitar" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "USCI_A0_ISR" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Actualizar_Datos" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Bandera_int_Timer" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Iniciar_ADC" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Metodo_cambios" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Bits_Crc" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Metodo_Escribir_Puerto" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "main" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Captura_rx" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Bits_Crc_Calculado" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Iniciar_puertos" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Contador_interrupcion" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+error #10056: symbol "cAumentoADC" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "MyReloj_12Mhz" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Bits_Direccion" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "MyReloj_20Mhz" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Metodo_Leer_ADC" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Iniciar_Uart" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Bandera_int_Rx" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Bits_Control" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "MyReloj" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+
+>> Compilation failure
+error #10056: symbol "InitGlobal" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Enviar_serial_text" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Flag_Inicio_Trama" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "TIMER0_A0_ISR" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10056: symbol "Bits_Informacion" redefined: first defined in "./main.obj"; redefined in "./main[Conflicto].obj"
+error #10010: errors encountered during linking; "CodigoSophia2.out" not built
+gmake: *** [CodigoSophia2.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="421" key="DIALOG_WIDTH"/>
+		<item value="242" key="DIALOG_Y_ORIGIN"/>
+		<item value="381" key="DIALOG_HEIGHT"/>
+		<item value="1151" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="Actualizar_Tabla" key="selection"/>
+		<list key="findhistory">
+			<item value="Actualizar_Datos"/>
+			<item value="Metodo_cambios"/>
+			<item value="Metodo_Habilitar"/>
+			<item value="inf["/>
+			<item value="inf"/>
+			<item value="inf_Aux"/>
+			<item value="sAux"/>
+			<item value="sPrueba1"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Actualizar_Tabla"/>
+			<item value="Metodo_Enviar_Tabla"/>
+			<item value="Metodo_Habilitar_Puertos"/>
+			<item value="Inf_Table["/>
+			<item value="Inf_Tabla["/>
+			<item value="Inf_Tabla"/>
+			<item value="Longitud"/>
+			<item value=""/>
+		</list>
+	</section>
+</section>
